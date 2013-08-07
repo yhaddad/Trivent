@@ -1,0 +1,42 @@
+<marlin>
+  <!--##########################################
+      #                                        #
+      #     Steering file for Trivent_v0.3     #
+      #                                        #
+      ##########################################-->
+  <execute>
+    <processor name="MyTriventProc"/>
+  </execute>
+  
+  
+  <global>
+    <parameter name="LCIOInputFiles">
+      ./DHCAL_713945_I4_0.slcio
+    </parameter>
+    <parameter name="MaxRecordNumber" value="2"/>
+    <parameter name="SkipNEvents" value="1"/>
+    <parameter name="SupressCheck" value="false"/>
+  </global>
+  
+  <processor name="MyTriventProc" type="TriventProc">
+    <parameter name="DIFMapping" type="string">
+      ./DifGeom/Slot1_39_Geom.txt
+    </parameter>
+    <parameter name="HitCollectionName" type="StringVec">DHCALRawHits </parameter>
+    <parameter name="GAIN_CORRECTION_MODE" type="bool">false </parameter>
+    <parameter name="electronic_noise_cut" type="int">100000 </parameter>
+    <parameter name="layerGap" type="double"> 2.8 </parameter>
+    <parameter name="LayerCut" type="int">7 </parameter>
+    <parameter name="noiseCut" type="int">7 </parameter>
+    <parameter name="timeWin" type="int">1 </parameter>
+    <parameter name="LCIOOutputFile" value="./TSDHCAL_testMerge.slcio"/>
+  </processor>
+  <processor name="MyLCIOOutputProcessor" type="LCIOOutputProcessor">
+    <parameter name="LCIOWriteMode" type="string">WRITE_NEW </parameter>
+  </processor>
+  
+</marlin>
+
+
+
+
