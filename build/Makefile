@@ -552,32 +552,6 @@ uninstall_doc/fast:
 	$(MAKE) -f doc/CMakeFiles/uninstall_doc.dir/build.make doc/CMakeFiles/uninstall_doc.dir/build
 .PHONY : uninstall_doc/fast
 
-#=============================================================================
-# Target rules for targets named Trivent
-
-# Build rule for target.
-Trivent: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Trivent
-.PHONY : Trivent
-
-# fast build rule for target.
-Trivent/fast:
-	$(MAKE) -f EventBuilder/CMakeFiles/Trivent.dir/build.make EventBuilder/CMakeFiles/Trivent.dir/build
-.PHONY : Trivent/fast
-
-#=============================================================================
-# Target rules for targets named TriventReco
-
-# Build rule for target.
-TriventReco: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TriventReco
-.PHONY : TriventReco
-
-# fast build rule for target.
-TriventReco/fast:
-	$(MAKE) -f SDHCALReco/CMakeFiles/TriventReco.dir/build.make SDHCALReco/CMakeFiles/TriventReco.dir/build
-.PHONY : TriventReco/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -622,8 +596,6 @@ help:
 	@echo "... uninstall"
 	@echo "... doc"
 	@echo "... uninstall_doc"
-	@echo "... Trivent"
-	@echo "... TriventReco"
 .PHONY : help
 
 

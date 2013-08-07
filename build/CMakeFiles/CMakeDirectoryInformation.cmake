@@ -10,6 +10,8 @@ SET(CMAKE_FORCE_UNIX_PATHS 1)
 
 # The C and CXX include file search paths:
 SET(CMAKE_C_INCLUDE_PATH
+  ".././EventBuilder/include"
+  ".././SDHCALReco/include"
   "/home/hadddad/work/ilcsoft/v01-17-02/Marlin/v01-05/include"
   "/home/hadddad/work/ilcsoft/v01-17-02/lcio/v02-04-01/include"
   "/home/hadddad/work/ilcsoft/v01-17-02/gear/v01-03/include"

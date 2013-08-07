@@ -50,7 +50,7 @@ docbuild/html/index.html: ../doc/../EventBuilder/include/*
 docbuild/html/index.html: ../doc/../EventBuilder/src/*
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/hadddad/work/Trivent/trunk/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building API Documentation..."
-	cd /home/hadddad/work/Trivent/trunk/doc && DOX_PROJECT_NAME=Trivent DOX_PROJECT_NUMBER="0.4.1" DOX_OUTPUT_DIRECTORY="/home/hadddad/work/Trivent/trunk/build/docbuild" DOX_INPUT="../EventBuilder/include ../EventBuilder/src" /home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/bin/doxygen
+	cd /home/hadddad/work/Trivent/trunk/doc && DOX_PROJECT_NAME=Trivent DOX_PROJECT_NUMBER="0.4.2" DOX_OUTPUT_DIRECTORY="/home/hadddad/work/Trivent/trunk/build/docbuild" DOX_INPUT="../EventBuilder/include ../EventBuilder/src" /home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/bin/doxygen
 
 doc: doc/CMakeFiles/doc
 doc: docbuild/html/index.html

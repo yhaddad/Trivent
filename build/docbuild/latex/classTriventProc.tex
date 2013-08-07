@@ -1,0 +1,321 @@
+\section{Trivent\-Proc Class Reference}
+\label{classTriventProc}\index{Trivent\-Proc@{Trivent\-Proc}}
+Inheritance diagram for Trivent\-Proc\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTriventProc}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Processor $\ast$ {\bfseries new\-Processor} ()\label{classTriventProc_a2eed3578f54694abc42fa4307dee1d20}
+
+\item 
+void {\bfseries init} ()\label{classTriventProc_ae13d0d62abd79b6836fe8eb897ee64c2}
+
+\item 
+void {\bf process\-Event} (L\-C\-Event $\ast$evt\-P)
+\item 
+void {\bfseries process\-Run\-Header} (L\-C\-Run\-Header $\ast$run\-H)\label{classTriventProc_a2a2ab0532cce0a212604ee07b777042d}
+
+\item 
+bool {\bfseries Min\-On\-Layer\-Cut} (int nch\-\_\-cut)\label{classTriventProc_ad0bda688a420336ce0b8eb2a1aae1534}
+
+\item 
+void {\bfseries X\-M\-L\-Reader} (std\-::string xmlfile)\label{classTriventProc_abbb736b698e72d3df8f7f3a30f280c78}
+
+\item 
+void {\bfseries read\-Dif\-Geom\-File} (std\-::string geomfile)\label{classTriventProc_a0b10dd2335c26feeefbc3f0dfd0de6c3}
+
+\item 
+void {\bfseries print\-Dif\-Geom} ()\label{classTriventProc_af2fc3368fa8ff09d0e6472fd6e0ca4a2}
+
+\item 
+uint {\bfseries get\-Cell\-Dif\-\_\-id} (int cell\-\_\-id)\label{classTriventProc_acf38b8e2ac310cdf8012089acf12dda2}
+
+\item 
+uint {\bfseries get\-Cell\-Asic\-\_\-id} (int cell\-\_\-id)\label{classTriventProc_a1fab13fc22554bfcee80d2bbc6e77510}
+
+\item 
+uint {\bfseries get\-Cell\-Chan\-\_\-id} (int cell\-\_\-id)\label{classTriventProc_af5fd540819042b9426b6c2c7485fb572}
+
+\item 
+void {\bfseries get\-Max\-Time} ()\label{classTriventProc_a42cd3e93ef2b88ead1bd2395945ea5e3}
+
+\item 
+uint\-Vec {\bfseries get\-Time\-Spectrum} ()\label{classTriventProc_a8d0b6dc0fad10f71100f617b1c970f48}
+
+\item 
+uint $\ast$ {\bfseries get\-Pad\-Index} (uint dif\-\_\-id, uint asic\-\_\-id, uint chan\-\_\-id)\label{classTriventProc_a5c8cc7cacb9b8bce67a4ca63e27afa53}
+
+\item 
+void {\bfseries event\-Builder} (L\-C\-Collection $\ast$col\-\_\-event, uint time\-\_\-peak, uint prev\-\_\-time\-\_\-peak)\label{classTriventProc_a780ee8e577ab2b70de6d416bd648b78d}
+
+\item 
+bool {\bfseries peak\-Or\-Not} (uint\-Vec time\-\_\-spectrum, uint itime, uint threshold)\label{classTriventProc_a9416baadb33709d4ae1249d25f65ff69}
+
+\item 
+void {\bfseries end} ()\label{classTriventProc_a0e407d5f7aa553911600c06a63e0de32}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T\-H1\-F $\ast$ {\bfseries noise\-\_\-dist}\label{classTriventProc_ac0a9072e3f7369a69a1279cd40742f5f}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries gain\-\_\-chan}\label{classTriventProc_aec0086ff9d72ce4571ea717a951d7873}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries mean\-\_\-hit\-\_\-dif}\label{classTriventProc_aa75d69847dd3dd9e46792239878b2bed}
+
+\item 
+T\-H1\-F $\ast$ {\bfseries time\-\_\-hit\-\_\-dif}\label{classTriventProc_a63e59016e4f099828dd6535439455548}
+
+\item 
+std\-::map$<$ std\-::string, \\*
+std\-::string $>$ {\bfseries m\-\_\-parameters}\label{classTriventProc_a3514acac042237306ea8a869f38f7e68}
+
+\item 
+std\-::vector\\*
+$<$ E\-V\-E\-N\-T\-::\-Raw\-Calorimeter\-Hit $\ast$ $>$ {\bfseries \-\_\-trigger\-\_\-raw\-\_\-hit}\label{classTriventProc_ab9d06de26636a08ead56e78aaa87e7a0}
+
+\item 
+bool {\bfseries G\-A\-I\-N\-\_\-\-C\-O\-R\-R\-E\-C\-T\-I\-O\-N\-\_\-\-M\-O\-D\-E}\label{classTriventProc_ac84895c8a6be617eb3332ab7a8ac37fe}
+
+\item 
+std\-::string {\bfseries \-\_\-out\-File\-Name}\label{classTriventProc_a387e40bdcac189c40e175e06815f02a5}
+
+\item 
+std\-::string {\bfseries \-\_\-noise\-File\-Name}\label{classTriventProc_a220762aa6135a107cee1ad913dad4a6d}
+
+\item 
+std\-::string {\bfseries \-\_\-tree\-Name}\label{classTriventProc_a769b399f40c85ccdeefb11e240a04524}
+
+\item 
+std\-::string {\bfseries \-\_\-logroot\-Name}\label{classTriventProc_a121c5cbee7cb958ed21c1a13d149b63f}
+
+\item 
+std\-::string {\bfseries \-\_\-col\-Name}\label{classTriventProc_adc5e858360c5d2ad5af169c5c626f914}
+
+\item 
+std\-::string {\bfseries \-\_\-file\-Name}\label{classTriventProc_a325f306ec60bc31a5d24e26ab6a4fddb}
+
+\item 
+std\-::string {\bfseries \-\_\-mappingfile}\label{classTriventProc_a989b747a0e4e6cfa02d1161a98de421b}
+
+\item 
+std\-::string {\bfseries \-\_\-geom\-X\-M\-L}\label{classTriventProc_a7c495692c2aad61a7ce60c749c5bf189}
+
+\item 
+std\-::ostream $\ast$ {\bfseries \-\_\-output}\label{classTriventProc_ad38fdb66f027efd6eaac8b638d35f85f}
+
+\item 
+std\-::vector$<$ std\-::string $>$ {\bfseries \-\_\-hcal\-Collections}\label{classTriventProc_a741619ec3d58ddd1a9744e9f57ffcb9d}
+
+\item 
+int {\bfseries \-\_\-overwrite}\label{classTriventProc_a9d01cd1a1fb76477953a190cc1c96fe8}
+
+\item 
+T\-Tree $\ast$ {\bfseries \-\_\-output\-Tree}\label{classTriventProc_ad4554751214a304dec1b09c55fd028d8}
+
+\item 
+unsigned int {\bfseries \-\_\-event\-Nr}\label{classTriventProc_afc0951084c600f51cd378430e8b1ed7f}
+
+\item 
+Int\-\_\-t {\bfseries \-\_\-\-Nhit}\label{classTriventProc_a6f03092ba886655fe7e6ef2faa6ec522}
+
+\item 
+Int\-\_\-t {\bfseries \-\_\-elec\-\_\-noise\-\_\-cut}\label{classTriventProc_a488e31f6481f5681c5286f4ad6bff084}
+
+\item 
+std\-::map$<$ int, {\bf Layer\-I\-D} $>$ {\bfseries \-\_\-mapping}\label{classTriventProc_ae9b9a0dd8dbec52b074660676aec5c3a}
+
+\item 
+std\-::map$<$ int, double $>$ {\bfseries \-\_\-chamber\-\_\-pos}\label{classTriventProc_a7976ae7b1b03e3b7b7d123d28e52b2c6}
+
+\item 
+int {\bfseries \-\_\-noise\-Cut}\label{classTriventProc_a0a1cbdfe614612719c1dd5304e2a60c4}
+
+\item 
+int {\bfseries \-\_\-time\-Win}\label{classTriventProc_a7026a2ba0c1c61fbfb14402dc933dfdc}
+
+\item 
+int {\bfseries \-\_\-\-Layer\-Cut}\label{classTriventProc_ad24c6960d10afbcef0ed02cfc7e365c7}
+
+\item 
+int {\bfseries \-\_\-time2prev\-\_\-event\-\_\-cut}\label{classTriventProc_ab300480569003a54edd34c46a63f9df4}
+
+\item 
+double {\bfseries \-\_\-layer\-\_\-gap}\label{classTriventProc_ac507176dcf02b0a8db304160ce93d63f}
+
+\item 
+float {\bfseries \-\_\-beam\-Energy}\label{classTriventProc_a1ae26de8044b04d845295bdb6ea00ae7}
+
+\item 
+int {\bfseries trig\-\_\-count}\label{classTriventProc_a77891bb090308eb5d8b57cacf06ab3c0}
+
+\item 
+int {\bfseries \-\_\-maxtime}\label{classTriventProc_aeb72fee6e655dd84b6c2142b6562ec44}
+
+\item 
+int {\bfseries evtnum}\label{classTriventProc_a7cd0658f8c4162a4b2039df7fde4c2d8}
+
+\item 
+int {\bfseries \-\_\-rejected\-Num}\label{classTriventProc_ae62a20b0357ddf5d24f6de3f9c2dd51c}
+
+\item 
+uint {\bfseries \-\_\-index} [3]\label{classTriventProc_a2966485d1996f86059e87d7b3ff419c9}
+
+\item 
+uint\-Vec {\bfseries zcut}\label{classTriventProc_ab77125d891b8f57baca23c74afdf40be}
+
+\item 
+L\-C\-Writer $\ast$ {\bfseries \-\_\-lc\-Writer}\label{classTriventProc_a5e80a938f23a70dc9a95f65903f04701}
+
+\item 
+std\-::string {\bfseries normal}\label{classTriventProc_af85b2772af2664fa71473108a7dc6bd7}
+
+\item 
+std\-::string {\bfseries red}\label{classTriventProc_ade637760722fa4dc9c4b36a2ce529027}
+
+\item 
+std\-::string {\bfseries green}\label{classTriventProc_a13a6d20c018fbf3ff83b28e5c8d3cbb4}
+
+\item 
+std\-::string {\bfseries yellow}\label{classTriventProc_a6659601453b91c2db5437e431e39ddd7}
+
+\item 
+std\-::string {\bfseries blue}\label{classTriventProc_af12ed889606a5daae796500684995b8c}
+
+\item 
+std\-::string {\bfseries magenta}\label{classTriventProc_a9a5ee47f38a27a4c8cfbeb8c1922cda8}
+
+\item 
+std\-::string {\bfseries white}\label{classTriventProc_a4a6754865dbcaadd651aaf674d5e0134}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file Trivent\-Proc.\-hh.
+
+
+
+\subsection{Member Function Documentation}
+\index{Trivent\-Proc@{Trivent\-Proc}!process\-Event@{process\-Event}}
+\index{process\-Event@{process\-Event}!TriventProc@{Trivent\-Proc}}
+\subsubsection[{process\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void Trivent\-Proc\-::process\-Event (
+\begin{DoxyParamCaption}
+\item[{L\-C\-Event $\ast$}]{evt\-P}
+\end{DoxyParamCaption}
+)}\label{classTriventProc_ad2327afd289a47a0a86b59f01561795c}
+loop over collection
+
+Find the condidate event 
+
+Definition at line 518 of file Trivent\-Proc.\-cc.
+
+
+\begin{DoxyCode}
+519 \{       
+520   \textcolor{keywordflow}{if} (evtP != NULL)\{
+521     \textcolor{keywordflow}{try}\{
+522       
+523       \_eventNr=evtP->getEventNumber();
+524       \textcolor{keywordflow}{for}(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i=0; i< \_hcalCollections.size(); i++)\{
+525         \textcolor{keywordflow}{try}\{
+526           
+527           LCCollection * col = NULL;
+528           col = evtP ->getCollection(\_hcalCollections[i].c\_str());
+529           \textcolor{keywordtype}{int} numElements = col->getNumberOfElements();\textcolor{comment}{// hit number }
+530           
+531           
+532           std::cout << yellow << \textcolor{stringliteral}{"Trigger name == "} << trig\_count++ << normal << std::endl;
+533           
+534           \textcolor{keywordflow}{if}(col == NULL )  \{
+535             std::cout<< red << \textcolor{stringliteral}{"TRIGGER SKIPED ..."}<< normal <<std::endl;
+536             \textcolor{keywordflow}{break};
+537           \}
+538           
+539           \textcolor{keywordflow}{if}(numElements > \_elec\_noise\_cut)  \{
+540             std::cout << red << \textcolor{stringliteral}{"TRIGGER SKIPED ..."}<< normal <<std::endl;
+541             \textcolor{keywordflow}{break};
+542           \}
+543           
+544           \textcolor{comment}{// set raw hits }
+545           \_trigger\_raw\_hit.clear();
+546           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ihit(0); ihit < col->getNumberOfElements(); ++ihit) \{\textcolor{comment}{// loop over the hits}
+547             RawCalorimeterHit *raw\_hit = 
+548               \textcolor{keyword}{dynamic\_cast<}RawCalorimeterHit*\textcolor{keyword}{>}( col->getElementAt(ihit)) ;
+549             \textcolor{keywordflow}{if} (NULL != raw\_hit)\{
+550               \_trigger\_raw\_hit.push\_back(raw\_hit);
+551             \}
+552           \}
+553           getMaxTime();
+554           uintVec time\_spectrum = getTimeSpectrum();
+555           
+556           \textcolor{comment}{//---------------------------------------------------------------}
+558 \textcolor{comment}{}          uint ibin=0;
+559           \textcolor{keywordtype}{double} bin\_c\_prev = -2 * \_timeWin; \textcolor{comment}{//  the previous bin center}
+560           
+561           \textcolor{keywordtype}{int} time\_prev = 0;
+562           \textcolor{keywordflow}{while}(ibin < (\_maxtime+1))\{ 
+563             \textcolor{keywordflow}{if}(time\_spectrum[ibin] >= \_noiseCut
+564                && time\_spectrum[ibin] >  time\_spectrum[ibin+1]  
+565                && time\_spectrum[ibin] >= time\_spectrum[ibin+1])\{
+566               LCEventImpl*  evt = \textcolor{keyword}{new} LCEventImpl() ;     \textcolor{comment}{// create the event}
+567               
+568               \textcolor{comment}{//---------- set event paramters ------}
+569               \textcolor{keyword}{const} std::string parname\_trigger = \textcolor{stringliteral}{"trigger"};
+570               \textcolor{keyword}{const} std::string parname\_energy  = \textcolor{stringliteral}{"beamEnergy"};
+571               evt->parameters().setValue(parname\_trigger,evtP->getEventNumber()); 
+572               evt->parameters().setValue(parname\_energy , \_beamEnergy); 
+573               evt->setRunNumber( evtP->getRunNumber()) ;
+574               \textcolor{comment}{//-------------------------------------}
+575               
+576               LCCollectionVec* outcol = \textcolor{keyword}{new} LCCollectionVec(LCIO::CALORIMETERHIT);
+577               TriventProc::eventBuilder(outcol,ibin,bin\_c\_prev);
+578               
+579               \textcolor{keywordtype}{bool} TestEvent = MinOnLayerCut(\_LayerCut);
+580               \textcolor{keywordflow}{if}(TestEvent &&                                  \textcolor{comment}{// the min layer numb cut       }
+581                  abs(\textcolor{keywordtype}{int}(ibin)-time\_prev) > \_time2prev\_event\_cut)\{ \textcolor{comment}{// time2prev event  cut }
+582 \textcolor{preprocessor}{#if true                }
+583 \textcolor{preprocessor}{}                std::cout<<green<<\textcolor{stringliteral}{" Trivent find event at :==> "}<< red << ibin 
+584                          <<green<<\textcolor{stringliteral}{"\(\backslash\)t :Nhit: ==> "}<< magenta
+585                          <<outcol->getNumberOfElements() << normal <<std::endl;  
+586 \textcolor{preprocessor}{#endif }
+587 \textcolor{preprocessor}{}                
+588                 
+589                 evt->setEventNumber( evtnum++ ) ;
+590                 evt->addCollection(outcol, \textcolor{stringliteral}{"SDHCAL\_HIT"});
+591                 \_lcWriter->writeEvent( evt ) ;
+592               \}\textcolor{keywordflow}{else}\{
+593                 \_rejectedNum++;
+594                 \textcolor{keyword}{delete} outcol;
+595               \}
+596               time\_prev = ibin;
+597               \textcolor{keyword}{delete} evt; evt=NULL;
+598               
+599               bin\_c\_prev = ibin;
+600               ibin = ibin+\_timeWin;
+601             \}\textcolor{keywordflow}{else}\{ibin++;\}
+602           \}
+603           
+604         \}\textcolor{keywordflow}{catch} (lcio::DataNotAvailableException zero) \{\}
+605       \}
+606     \}\textcolor{keywordflow}{catch} (lcio::DataNotAvailableException err) \{\}
+607   \}
+608   
+609            
+610 \}       
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Trivent\-Proc.\-hh\item 
+Trivent\-Proc.\-cc\end{DoxyCompactItemize}

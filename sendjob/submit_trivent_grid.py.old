@@ -1,0 +1,84 @@
+import os
+import sys
+import string
+from Ganga import *
+
+scriptLocalPath = "./"
+
+miphistScript = "run_trivent_grid.sh"
+miphistPath   = "%s/%s" % (scriptLocalPath, miphistScript)
+
+inbox = [miphistPath]
+
+# CE = 'grid-ce5\.desy\.de:2119/jobmanager-lcgpbs-desy'
+# CE = 'grid-cr5\.desy\.de:8443/cream-pbs-desy'
+
+CE = 'grid-cr4\.desy\.de:8443/cream-pbs-desy'
+
+# ecals = ['siOnly', 'scOnly', 'blocks', 'alternate']
+# read a input files 
+
+# ----------
+#In [21:]
+#In [22]:j = Job(splitter=s)
+#In [23]:j.submit()
+#runs = ['714520','714536','714541','714547','714470']
+runs = ['715573']
+try:
+    print "submitting job"
+    #   
+    os.system('rm file.txt')
+    #os.system('lfc-ls /grid/calice/SDHCAL/TB/CERN/SPS_May2012/RAW')
+    os.system('lfc-ls /grid/calice/SDHCAL/TB/CERN/SPS_AugSep2012/RAW > file.txt')
+    
+    ins = open( "file.txt", "r" )
+    array = []
+    
+    for line in ins:
+        ar  = []
+        ar.append( line.strip() )
+        array.append(ar)
+    
+    #print array
+    
+    gs = [] 
+    for index in array:
+        for ss in index:
+            split_list = ss.split("_")
+            for run in runs: 
+                if run in split_list:
+                    arg = []
+                    arg.append(ss)
+                    gs.append(arg)
+                    print arg
+
+    print "==== find flowing file  ====="                
+    print gs
+    
+    s = ArgSplitter(args=gs)
+    print "==== after argSplitter ======"
+    #                          ['DHCAL_715390_I0_1.slcio'],
+    #                          ['DHCAL_715390_I0_2.slcio'],
+    #                          ['DHCAL_715390_I1_0.slcio'],
+    #                          ['DHCAL_715390_I1_1.slcio'],
+    #                          ['DHCAL_715390_I1_2.slcio'],
+    #                          ['DHCAL_715390_I2_0.slcio'],
+    #                          ['DHCAL_715390_I2_1.slcio'],
+    #                          ['DHCAL_715390_I2_2.slcio'],
+    #                          ['DHCAL_715390_I3_0.slcio'],
+    #                          ['DHCAL_715390_I3_1.slcio'],
+    #                          ['DHCAL_715390_I3_2.slcio']])
+    print s
+    j = Job(splitter=s)
+    j.backend = LCG()
+    j.backend.middleware = 'GLITE'
+    j.backend.CE = CE
+    j.name = 'test'
+    j.application.exe = miphistScript
+    args = ['arg1']
+    j.application.args = args
+    j.inputsandbox = inbox
+    print j.application.exe, j.application.args, j.inputsandbox
+    j.submit()
+except:
+    print "failed to submit job"

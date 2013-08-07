@@ -8,8 +8,6 @@ SET(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../EventBuilder/CMakeLists.txt"
-  "../SDHCALReco/CMakeLists.txt"
   "CMakeFiles/CMakeCCompiler.cmake"
   "CMakeFiles/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeSystem.cmake"
@@ -86,8 +84,6 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "doc/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "EventBuilder/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "SDHCALReco/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -123,6 +119,4 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "doc/CMakeFiles/doc.dir/DependInfo.cmake"
   "doc/CMakeFiles/uninstall_doc.dir/DependInfo.cmake"
-  "EventBuilder/CMakeFiles/Trivent.dir/DependInfo.cmake"
-  "SDHCALReco/CMakeFiles/TriventReco.dir/DependInfo.cmake"
   )

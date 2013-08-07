@@ -26,8 +26,6 @@
 /home/hadddad/work/Trivent/trunk/build/CMakeFiles/NightlySubmit.dir
 /home/hadddad/work/Trivent/trunk/build/CMakeFiles/NightlyTest.dir
 /home/hadddad/work/Trivent/trunk/build/CMakeFiles/NightlyUpdate.dir
-/home/hadddad/work/Trivent/trunk/build/EventBuilder/CMakeFiles/Trivent.dir
-/home/hadddad/work/Trivent/trunk/build/SDHCALReco/CMakeFiles/TriventReco.dir
 /home/hadddad/work/Trivent/trunk/build/doc/CMakeFiles/doc.dir
 /home/hadddad/work/Trivent/trunk/build/CMakeFiles/uninstall.dir
 /home/hadddad/work/Trivent/trunk/build/doc/CMakeFiles/uninstall_doc.dir

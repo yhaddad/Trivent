@@ -1,0 +1,220 @@
+\section{D\-I\-F\-Slow\-Control Class Reference}
+\label{classDIFSlowControl}\index{D\-I\-F\-Slow\-Control@{D\-I\-F\-Slow\-Control}}
+
+
+Handler of D\-I\-F Slow Control info.  
+
+
+
+
+{\ttfamily \#include $<$D\-I\-F\-Slow\-Control.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf D\-I\-F\-Slow\-Control} (unsigned int version, unsigned short D\-Idi, unsigned char $\ast$buf)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf D\-I\-F\-Slow\-Control} ()\label{classDIFSlowControl_a9ab99ff41ff746c990ca475d6edb4158}
+
+\begin{DoxyCompactList}\small\item\em Default Cosntructor. \end{DoxyCompactList}\item 
+unsigned short {\bf get\-D\-I\-F\-Id} ()\label{classDIFSlowControl_aa9709f45bc7dd629013f850ac8d3ef55}
+
+\begin{DoxyCompactList}\small\item\em get D\-I\-F id \end{DoxyCompactList}\item 
+map$<$ int, map$<$ string, int $>$ $>$ {\bf get\-Chips\-Map} ()
+\begin{DoxyCompactList}\small\item\em Get chips map. \end{DoxyCompactList}\item 
+map$<$ string, int $>$ {\bf get\-Chip\-Slow\-Control} (int asicid)
+\begin{DoxyCompactList}\small\item\em Get one chip map. \end{DoxyCompactList}\item 
+int {\bf get\-Chip\-Slow\-Control} (int asicid, string param)
+\begin{DoxyCompactList}\small\item\em Get one Chip value. \end{DoxyCompactList}\item 
+void {\bf Dump} ()\label{classDIFSlowControl_af5d12af4062366925fbe631687f987dd}
+
+\begin{DoxyCompactList}\small\item\em print out full map \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handler of D\-I\-F Slow Control info. 
+
+\begin{DoxyAuthor}{Author}
+L.\-Mirabito 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 2010 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+Definition at line 20 of file D\-I\-F\-Slow\-Control.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{D\-I\-F\-Slow\-Control@{D\-I\-F\-Slow\-Control}!D\-I\-F\-Slow\-Control@{D\-I\-F\-Slow\-Control}}
+\index{D\-I\-F\-Slow\-Control@{D\-I\-F\-Slow\-Control}!DIFSlowControl@{D\-I\-F\-Slow\-Control}}
+\subsubsection[{D\-I\-F\-Slow\-Control}]{\setlength{\rightskip}{0pt plus 5cm}D\-I\-F\-Slow\-Control\-::\-D\-I\-F\-Slow\-Control (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{version, }
+\item[{unsigned short}]{D\-Idi, }
+\item[{unsigned char $\ast$}]{buf}
+\end{DoxyParamCaption}
+)}\label{classDIFSlowControl_a7c579de8938c49d0ad78c31edb6e8198}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & Data format version \\
+\hline
+{\em D\-Idi} & D\-I\-F id \\
+\hline
+{\em buf} & Pointer to the Raw data buffer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file D\-I\-F\-Slow\-Control.\-cc.
+
+
+\begin{DoxyCode}
+60 \{
+61   \_DIFId=DIdi;
+62   \_version=vers;
+63   \_asicType=2;
+64   \textcolor{comment}{// }
+65   \textcolor{comment}{//std::cout<<"DIFSlowControl :: "<<std::hex<<(int)cbuf[0]<<std::dec<<std::endl;}
+66   \textcolor{keywordflow}{if} (cbuf[0]!=0xb1) \textcolor{keywordflow}{return};
+67   \textcolor{keywordtype}{int} header\_shift=6;
+68   \textcolor{keywordflow}{if} (\_version<8) 
+69     \_nAsic=cbuf[5];
+70   \textcolor{keywordflow}{else}
+71     \{
+72       \_DIFId=cbuf[1];
+73       \_nAsic= cbuf[2];
+74       header\_shift=3;
+75     \}
+76 
+77   \textcolor{comment}{//std::cout<<" Id version header shift "<<\_DIFId<<" "<<\_version<<" "<<\_nAsic<<"
+       "<<header\_shift<<std::endl;}
+78   \textcolor{keywordtype}{int} size\_hardroc1 = \_nAsic*72+header\_shift+1;
+79   \textcolor{keywordflow}{if} (cbuf[size\_hardroc1-1]!=0xa1) size\_hardroc1=0;
+80 
+81   \textcolor{keywordtype}{int} size\_hardroc2 = \_nAsic*109+header\_shift+1;
+82   \textcolor{keywordflow}{if} (cbuf[size\_hardroc2-1]!=0xa1) size\_hardroc2=0;
+83   
+84   \textcolor{comment}{//std::cout<<" Hardroc 1 "<<size\_hardroc1<<" "<<(int)cbuf[size\_hardroc1-1]<<" "<<(int)
+       cbuf[size\_hardroc1]<<std::endl;}
+85   \textcolor{comment}{//std::cout<<" Hardroc 2 "<<size\_hardroc2<<" "<<(int)cbuf[size\_hardroc2-1]<<" "<<(int)
+       cbuf[size\_hardroc2]<<std::endl;}
+86 
+87   \textcolor{keywordflow}{if} (size\_hardroc1!=0)
+88     \{
+89     FillHR1(header\_shift,cbuf);
+90     \_asicType=1;
+91     \}
+92   \textcolor{keywordflow}{else}
+93     \textcolor{keywordflow}{if} (size\_hardroc2!=0)
+94       FillHR2(header\_shift,cbuf);
+95     \textcolor{keywordflow}{else}
+96       \textcolor{keywordflow}{return};
+97 
+98 
+99 
+100 
+101   
+102 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{D\-I\-F\-Slow\-Control@{D\-I\-F\-Slow\-Control}!get\-Chip\-Slow\-Control@{get\-Chip\-Slow\-Control}}
+\index{get\-Chip\-Slow\-Control@{get\-Chip\-Slow\-Control}!DIFSlowControl@{D\-I\-F\-Slow\-Control}}
+\subsubsection[{get\-Chip\-Slow\-Control}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,int$>$ D\-I\-F\-Slow\-Control\-::get\-Chip\-Slow\-Control (
+\begin{DoxyParamCaption}
+\item[{int}]{asicid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDIFSlowControl_ad37d6fe51915ee489ff7b026abb48c24}
+
+
+Get one chip map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em asicid} & A\-S\-I\-C I\-D \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a map of $<$string (parameter name),int (parameter value) $>$ 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file D\-I\-F\-Slow\-Control.\-h.
+
+
+\begin{DoxyCode}
+47 \{ \textcolor{keywordflow}{return} \_mapSC[asicid];\}
+\end{DoxyCode}
+\index{D\-I\-F\-Slow\-Control@{D\-I\-F\-Slow\-Control}!get\-Chip\-Slow\-Control@{get\-Chip\-Slow\-Control}}
+\index{get\-Chip\-Slow\-Control@{get\-Chip\-Slow\-Control}!DIFSlowControl@{D\-I\-F\-Slow\-Control}}
+\subsubsection[{get\-Chip\-Slow\-Control}]{\setlength{\rightskip}{0pt plus 5cm}int D\-I\-F\-Slow\-Control\-::get\-Chip\-Slow\-Control (
+\begin{DoxyParamCaption}
+\item[{int}]{asicid, }
+\item[{string}]{param}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDIFSlowControl_a5a3958416420d777f57f6c5b45467a9a}
+
+
+Get one Chip value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em asicid} & A\-Sic I\-D \\
+\hline
+{\em param} & Parameter name \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 54 of file D\-I\-F\-Slow\-Control.\-h.
+
+
+
+References get\-Chip\-Slow\-Control().
+
+
+
+Referenced by get\-Chip\-Slow\-Control().
+
+
+\begin{DoxyCode}
+54 \{ \textcolor{keywordflow}{return} getChipSlowControl(asicid)[param];\}
+\end{DoxyCode}
+\index{D\-I\-F\-Slow\-Control@{D\-I\-F\-Slow\-Control}!get\-Chips\-Map@{get\-Chips\-Map}}
+\index{get\-Chips\-Map@{get\-Chips\-Map}!DIFSlowControl@{D\-I\-F\-Slow\-Control}}
+\subsubsection[{get\-Chips\-Map}]{\setlength{\rightskip}{0pt plus 5cm}map$<$ int,map $<$string,int$>$ $>$ D\-I\-F\-Slow\-Control\-::get\-Chips\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classDIFSlowControl_a58644b35bd873ac0f104c2b59825020c}
+
+
+Get chips map. 
+
+\begin{DoxyReturn}{Returns}
+a map of $<$ Asic Id, map of $<$string (parameter name),int (parameter value) $>$ 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file D\-I\-F\-Slow\-Control.\-h.
+
+
+\begin{DoxyCode}
+40 \{ \textcolor{keywordflow}{return} \_mapSC;\}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+D\-I\-F\-Slow\-Control.\-h\item 
+D\-I\-F\-Slow\-Control.\-cc\end{DoxyCompactItemize}

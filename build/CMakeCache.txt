@@ -297,14 +297,8 @@ SLURM_SRUN_COMMAND:FILEPATH=SLURM_SRUN_COMMAND-NOTFOUND
 //Path to a program.
 SVNCOMMAND:FILEPATH=/home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/bin/svn
 
-//Dependencies for the target
-TriventReco_LIB_DEPENDS:STATIC=general;/home/hadddad/work/ilcsoft/v01-17-02/Marlin/v01-05/lib/libMarlin.so;general;/home/hadddad/work/ilcsoft/v01-17-02/lcio/v02-04-01/lib/liblcio.so;general;/home/hadddad/work/ilcsoft/v01-17-02/lcio/v02-04-01/lib/libsio.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/lib/x86_64-linux-gnu/libz.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gear/v01-03/lib/libgearsurf.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gear/v01-03/lib/libgear.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gear/v01-03/lib/libgearxml.so;general;/home/hadddad/work/ilcsoft/v01-17-02/CLHEP/2.1.3.1/lib/libCLHEP.so;general;/home/hadddad/work/ilcsoft/v01-17-02/ilcutil/v01-00/lib/libstreamlog.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libCore.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libCint.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libRIO.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libNet.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libHist.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libGraf.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libGraf3d.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libGpad.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libTree.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libRint.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libPostscript.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libMatrix.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libPhysics.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libMathCore.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libThread.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/lib/x86_64-linux-gnu/libdl.so;
-
 //Value Computed by CMake
 Trivent_BINARY_DIR:STATIC=/home/hadddad/work/Trivent/trunk/build
-
-//Dependencies for the target
-Trivent_LIB_DEPENDS:STATIC=general;/home/hadddad/work/ilcsoft/v01-17-02/Marlin/v01-05/lib/libMarlin.so;general;/home/hadddad/work/ilcsoft/v01-17-02/lcio/v02-04-01/lib/liblcio.so;general;/home/hadddad/work/ilcsoft/v01-17-02/lcio/v02-04-01/lib/libsio.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/lib/x86_64-linux-gnu/libz.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gear/v01-03/lib/libgearsurf.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gear/v01-03/lib/libgear.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gear/v01-03/lib/libgearxml.so;general;/home/hadddad/work/ilcsoft/v01-17-02/CLHEP/2.1.3.1/lib/libCLHEP.so;general;/home/hadddad/work/ilcsoft/v01-17-02/ilcutil/v01-00/lib/libstreamlog.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libCore.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libCint.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libRIO.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libNet.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libHist.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libGraf.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libGraf3d.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libGpad.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libTree.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libRint.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libPostscript.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libMatrix.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libPhysics.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libMathCore.so;general;/home/hadddad/work/ilcsoft/v01-17-02/root/5.34.05/lib/libThread.so;general;/home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/lib/x86_64-linux-gnu/libdl.so;
 
 //Value Computed by CMake
 Trivent_SOURCE_DIR:STATIC=/home/hadddad/work/Trivent/trunk
@@ -410,7 +404,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

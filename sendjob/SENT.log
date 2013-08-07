@@ -1,0 +1,505 @@
+POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2009-03-07/file27ccbcc2-60b3-45c7-8039-8ded859fc1dd</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 989
+Connection: close
+SOAPAction: "PrepareToGet"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToGet><srmPrepareToGetRequest><arrayOfFileRequests><requestArray><sourceSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2009-03-07/file27ccbcc2-60b3-45c7-8039-8ded859fc1dd</sourceSURL></requestArray></arrayOfFileRequests><desiredFileStorageType>PERMANENT</desiredFileStorageType><desiredTotalRequestTime>3600</desiredTotalRequestTime><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToGetRequest></srm2:srmPrepareToGet></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfGetRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfGetRequest><srmStatusOfGetRequestRequest><requestToken>3f51746a-13db-48a1-a412-f9f396b2f045</requestToken></srmStatusOfGetRequestRequest></srm2:srmStatusOfGetRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 767
+Connection: close
+SOAPAction: "ReleaseFiles"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmReleaseFiles><srmReleaseFilesRequest><requestToken>3f51746a-13db-48a1-a412-f9f396b2f045</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2009-03-07/file27ccbcc2-60b3-45c7-8039-8ded859fc1dd</urlArray></arrayOfSURLs></srmReleaseFilesRequest></srm2:srmReleaseFiles></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2009-03-07/file451664db-1dc9-4ca9-aa26-a350d8ba7f57</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 989
+Connection: close
+SOAPAction: "PrepareToGet"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToGet><srmPrepareToGetRequest><arrayOfFileRequests><requestArray><sourceSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2009-03-07/file451664db-1dc9-4ca9-aa26-a350d8ba7f57</sourceSURL></requestArray></arrayOfFileRequests><desiredFileStorageType>PERMANENT</desiredFileStorageType><desiredTotalRequestTime>3600</desiredTotalRequestTime><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToGetRequest></srm2:srmPrepareToGet></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfGetRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfGetRequest><srmStatusOfGetRequestRequest><requestToken>df1ad0b1-ed94-43ae-86f6-96bab193f8a4</requestToken></srmStatusOfGetRequestRequest></srm2:srmStatusOfGetRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 767
+Connection: close
+SOAPAction: "ReleaseFiles"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmReleaseFiles><srmReleaseFilesRequest><requestToken>df1ad0b1-ed94-43ae-86f6-96bab193f8a4</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2009-03-07/file451664db-1dc9-4ca9-aa26-a350d8ba7f57</urlArray></arrayOfSURLs></srmReleaseFilesRequest></srm2:srmReleaseFiles></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-27/file640079ec-49c2-4586-aa65-271b2a717016</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-27/file6cdcad8c-9837-44bf-9bc0-676f6d2270bf</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file258e01a4-c530-41ee-9687-53603d9f849f</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file5d5a2871-acd0-4e20-b18f-47959434af27</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file70cc9430-5da9-4b39-8121-2d52e74b7510</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file6ddf5997-c6ac-4494-a33b-21dd80d5b45b</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file85b636d8-e311-4672-9f33-ca2aed6d3502</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file6fd48b7e-789e-42da-a4a2-415920d25abc</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/filec134a077-c9cf-4cd9-8292-fc69aff2faab</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file6f21b5c9-cda6-4677-9d6b-e1c1ee8b785a</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/filee1512dc3-6f50-49ad-91b3-2ae2ce063c67</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/fileb2102bab-4db3-4845-8879-d7d9457b6f36</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file2b34bc6c-3674-431c-b934-ae77f6b062c8</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file6a930848-0f5a-4f91-910b-f451ccc8b61a</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/file5c39fd71-d3bc-4a27-9c7f-6bd13ae3f366</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-28/filec862242e-f5cd-4f34-b177-c73f4d7d9a7d</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 596
+Connection: close
+SOAPAction: "Mkdir"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmMkdir><srmMkdirRequest><SURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29</SURL></srmMkdirRequest></srm2:srmMkdir></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 1033
+Connection: close
+SOAPAction: "PrepareToPut"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToPut><srmPrepareToPutRequest><arrayOfFileRequests><requestArray><targetSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/file6ef356ae-1b50-4ab8-9da2-9123f661a469</targetSURL><expectedFileSize>1541038</expectedFileSize></requestArray></arrayOfFileRequests><desiredTotalRequestTime>3600</desiredTotalRequestTime><desiredFileStorageType>PERMANENT</desiredFileStorageType><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToPutRequest></srm2:srmPrepareToPut></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfPutRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfPutRequest><srmStatusOfPutRequestRequest><requestToken>206bd626-024e-45a7-a7bc-93d80a894327</requestToken></srmStatusOfPutRequestRequest></srm2:srmStatusOfPutRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 747
+Connection: close
+SOAPAction: "PutDone"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPutDone><srmPutDoneRequest><requestToken>206bd626-024e-45a7-a7bc-93d80a894327</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/file6ef356ae-1b50-4ab8-9da2-9123f661a469</urlArray></arrayOfSURLs></srmPutDoneRequest></srm2:srmPutDone></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/file6ef356ae-1b50-4ab8-9da2-9123f661a469</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 596
+Connection: close
+SOAPAction: "Mkdir"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmMkdir><srmMkdirRequest><SURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29</SURL></srmMkdirRequest></srm2:srmMkdir></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 1030
+Connection: close
+SOAPAction: "PrepareToPut"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToPut><srmPrepareToPutRequest><arrayOfFileRequests><requestArray><targetSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/filec29ff6a4-d898-41e9-9924-a99f4b29ca0b</targetSURL><expectedFileSize>3892</expectedFileSize></requestArray></arrayOfFileRequests><desiredTotalRequestTime>3600</desiredTotalRequestTime><desiredFileStorageType>PERMANENT</desiredFileStorageType><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToPutRequest></srm2:srmPrepareToPut></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfPutRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfPutRequest><srmStatusOfPutRequestRequest><requestToken>105186c0-08c6-4c8a-b62c-0af8bf788567</requestToken></srmStatusOfPutRequestRequest></srm2:srmStatusOfPutRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 747
+Connection: close
+SOAPAction: "PutDone"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPutDone><srmPutDoneRequest><requestToken>105186c0-08c6-4c8a-b62c-0af8bf788567</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/filec29ff6a4-d898-41e9-9924-a99f4b29ca0b</urlArray></arrayOfSURLs></srmPutDoneRequest></srm2:srmPutDone></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/filec29ff6a4-d898-41e9-9924-a99f4b29ca0b</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/file9dbf98c5-ee69-4307-a62c-e22801cc8b27</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/file1e7b49aa-cddd-4968-b839-c2aadd4a4e85</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 989
+Connection: close
+SOAPAction: "PrepareToGet"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToGet><srmPrepareToGetRequest><arrayOfFileRequests><requestArray><sourceSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/file1e7b49aa-cddd-4968-b839-c2aadd4a4e85</sourceSURL></requestArray></arrayOfFileRequests><desiredFileStorageType>PERMANENT</desiredFileStorageType><desiredTotalRequestTime>3600</desiredTotalRequestTime><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToGetRequest></srm2:srmPrepareToGet></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfGetRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfGetRequest><srmStatusOfGetRequestRequest><requestToken>9849a3cb-b9ec-4395-bd5c-acf31bd978be</requestToken></srmStatusOfGetRequestRequest></srm2:srmStatusOfGetRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 767
+Connection: close
+SOAPAction: "ReleaseFiles"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmReleaseFiles><srmReleaseFilesRequest><requestToken>9849a3cb-b9ec-4395-bd5c-acf31bd978be</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-08-29/file1e7b49aa-cddd-4968-b839-c2aadd4a4e85</urlArray></arrayOfSURLs></srmReleaseFilesRequest></srm2:srmReleaseFiles></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 662
+Connection: close
+SOAPAction: "srmRm"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmRm><srmRmRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-01/file681a4dfd-ba0f-48a5-af64-d224b33b9dfe</urlArray></arrayOfSURLs></srmRmRequest></srm2:srmRm></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/file7c3a55ec-655c-4a02-9fbc-d8a2f7bba19c</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 989
+Connection: close
+SOAPAction: "PrepareToGet"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToGet><srmPrepareToGetRequest><arrayOfFileRequests><requestArray><sourceSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/file7c3a55ec-655c-4a02-9fbc-d8a2f7bba19c</sourceSURL></requestArray></arrayOfFileRequests><desiredFileStorageType>PERMANENT</desiredFileStorageType><desiredTotalRequestTime>3600</desiredTotalRequestTime><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToGetRequest></srm2:srmPrepareToGet></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfGetRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfGetRequest><srmStatusOfGetRequestRequest><requestToken>ca4843e9-638d-4963-8865-0dbcc0a7da07</requestToken></srmStatusOfGetRequestRequest></srm2:srmStatusOfGetRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 767
+Connection: close
+SOAPAction: "ReleaseFiles"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmReleaseFiles><srmReleaseFilesRequest><requestToken>ca4843e9-638d-4963-8865-0dbcc0a7da07</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/file7c3a55ec-655c-4a02-9fbc-d8a2f7bba19c</urlArray></arrayOfSURLs></srmReleaseFilesRequest></srm2:srmReleaseFiles></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/filef5ed07cc-17ec-4634-9d11-2b3c4bc16fb3</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 989
+Connection: close
+SOAPAction: "PrepareToGet"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToGet><srmPrepareToGetRequest><arrayOfFileRequests><requestArray><sourceSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/filef5ed07cc-17ec-4634-9d11-2b3c4bc16fb3</sourceSURL></requestArray></arrayOfFileRequests><desiredFileStorageType>PERMANENT</desiredFileStorageType><desiredTotalRequestTime>3600</desiredTotalRequestTime><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToGetRequest></srm2:srmPrepareToGet></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfGetRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfGetRequest><srmStatusOfGetRequestRequest><requestToken>e9d3dff9-15b7-410c-a9fe-01907bbba4c1</requestToken></srmStatusOfGetRequestRequest></srm2:srmStatusOfGetRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 767
+Connection: close
+SOAPAction: "ReleaseFiles"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmReleaseFiles><srmReleaseFilesRequest><requestToken>e9d3dff9-15b7-410c-a9fe-01907bbba4c1</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/filef5ed07cc-17ec-4634-9d11-2b3c4bc16fb3</urlArray></arrayOfSURLs></srmReleaseFilesRequest></srm2:srmReleaseFiles></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/filee605bc99-dd46-42bd-9d4c-76a228bdac5b</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 989
+Connection: close
+SOAPAction: "PrepareToGet"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToGet><srmPrepareToGetRequest><arrayOfFileRequests><requestArray><sourceSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/filee605bc99-dd46-42bd-9d4c-76a228bdac5b</sourceSURL></requestArray></arrayOfFileRequests><desiredFileStorageType>PERMANENT</desiredFileStorageType><desiredTotalRequestTime>3600</desiredTotalRequestTime><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToGetRequest></srm2:srmPrepareToGet></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfGetRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfGetRequest><srmStatusOfGetRequestRequest><requestToken>3febe494-4e6f-407c-b310-88fc5c967244</requestToken></srmStatusOfGetRequestRequest></srm2:srmStatusOfGetRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 767
+Connection: close
+SOAPAction: "ReleaseFiles"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmReleaseFiles><srmReleaseFilesRequest><requestToken>3febe494-4e6f-407c-b310-88fc5c967244</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/filee605bc99-dd46-42bd-9d4c-76a228bdac5b</urlArray></arrayOfSURLs></srmReleaseFilesRequest></srm2:srmReleaseFiles></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 731
+Connection: close
+SOAPAction: "Ls"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmLs><srmLsRequest><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/file234a0b89-e8d7-4a2d-8d6a-b8b9c107d070</urlArray></arrayOfSURLs><fullDetailedList>true</fullDetailedList><numOfLevels>0</numOfLevels></srmLsRequest></srm2:srmLs></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 989
+Connection: close
+SOAPAction: "PrepareToGet"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmPrepareToGet><srmPrepareToGetRequest><arrayOfFileRequests><requestArray><sourceSURL>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/file234a0b89-e8d7-4a2d-8d6a-b8b9c107d070</sourceSURL></requestArray></arrayOfFileRequests><desiredFileStorageType>PERMANENT</desiredFileStorageType><desiredTotalRequestTime>3600</desiredTotalRequestTime><transferParameters><arrayOfTransferProtocols><stringArray>gsiftp</stringArray></arrayOfTransferProtocols></transferParameters></srmPrepareToGetRequest></srm2:srmPrepareToGet></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 631
+Connection: close
+SOAPAction: "StatusOfGetRequest"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmStatusOfGetRequest><srmStatusOfGetRequestRequest><requestToken>11f4cd2d-a8f5-4be9-adb6-049e53bd34fb</requestToken></srmStatusOfGetRequestRequest></srm2:srmStatusOfGetRequest></SOAP-ENV:Body></SOAP-ENV:Envelope>POST /srm/managerv2 HTTP/1.1
+Host: polgrid4.in2p3.fr:8446
+User-Agent: gSOAP/2.7
+Content-Type: text/xml; charset=utf-8
+Content-Length: 767
+Connection: close
+SOAPAction: "ReleaseFiles"
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:srm2="http://srm.lbl.gov/StorageResourceManager"><SOAP-ENV:Body SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"><srm2:srmReleaseFiles><srmReleaseFilesRequest><requestToken>11f4cd2d-a8f5-4be9-adb6-049e53bd34fb</requestToken><arrayOfSURLs><urlArray>srm://polgrid4.in2p3.fr/dpm/in2p3.fr/home/calice/generated/2012-09-05/file234a0b89-e8d7-4a2d-8d6a-b8b9c107d070</urlArray></arrayOfSURLs></srmReleaseFilesRequest></srm2:srmReleaseFiles></SOAP-ENV:Body></SOAP-ENV:Envelope>

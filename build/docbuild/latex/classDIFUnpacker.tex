@@ -1,0 +1,84 @@
+\section{D\-I\-F\-Unpacker Class Reference}
+\label{classDIFUnpacker}\index{D\-I\-F\-Unpacker@{D\-I\-F\-Unpacker}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned long long {\bfseries Gray\-To\-Bin} (unsigned long long n)\label{classDIFUnpacker_ac74ff0751283b47ec3305e6bd097f205}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-Start\-Of\-D\-I\-F} (unsigned char $\ast$cbuf, uint32\-\_\-t size\-\_\-buf, uint32\-\_\-t start=92)\label{classDIFUnpacker_a86b0d092ea83532cff54ab8ef84e6a4d}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-I\-D} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_a4b106d75d0bbe55aaa04543b803c570c}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-D\-T\-C} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_a386f40719e54da21a043aaaa2f99a923}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-G\-T\-C} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_a1c394b50668906c62aa4ffceb17afa64}
+
+\item 
+static unsigned long long {\bfseries get\-Absolute\-B\-C\-I\-D} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_a74793ca664243ae4c8a0208429e4f616}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-B\-C\-I\-D} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_ac76f67110c4bedc0c61aaf8debc40733}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-Lines} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_a2758864b517c88fe23a63d0d4e42ea03}
+
+\item 
+static bool {\bfseries has\-Line} (uint32\-\_\-t line, unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_aa0bb59ee85f241b4f5e05600315fe2ab}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-T\-A\-S\-U1} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_a53856c28021d5fb4e6456971f982eb18}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-T\-A\-S\-U2} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_ae0637a6a2f2f125e32fa61bc01bd17f2}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-T\-D\-I\-F} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_a6d9a18d21dafac9dacc738d623b7e882}
+
+\item 
+static bool {\bfseries has\-Temperature} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_a0a70ac9ebc523e4289088967f2e518c5}
+
+\item 
+static bool {\bfseries has\-Analog\-Readout} (unsigned char $\ast$cb, uint32\-\_\-t idx=0)\label{classDIFUnpacker_aa02d8c21418823e1fa9fe0364e21a13d}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-Frame\-Asic\-Header} (unsigned char $\ast$frame\-Ptr)\label{classDIFUnpacker_ae9004570d90ff565d8b18aa96222d4bc}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-Frame\-B\-C\-I\-D} (unsigned char $\ast$frame\-Ptr)\label{classDIFUnpacker_a2ac77487a6292a01969859e8546f63de}
+
+\item 
+static bool {\bfseries get\-Frame\-P\-A\-D} (unsigned char $\ast$frame\-Ptr, uint32\-\_\-t ip)\label{classDIFUnpacker_a7dcd946045bfd90eacc02febd81237f1}
+
+\item 
+static bool {\bfseries get\-Frame\-Level} (unsigned char $\ast$frame\-Ptr, uint32\-\_\-t ip, uint32\-\_\-t level)\label{classDIFUnpacker_ae9dd6ecdd0a26d8c0b3dfe5407733d0a}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-Analog\-Ptr} (std\-::vector$<$ unsigned char $\ast$ $>$ \&v\-Lines, unsigned char $\ast$cb, uint32\-\_\-t idx=0)  throw (std\-::string)\label{classDIFUnpacker_a17e12f0a800b6b9b1fa39f5ecf83d7c5}
+
+\item 
+static uint32\-\_\-t {\bfseries get\-Frame\-Ptr} (std\-::vector$<$ unsigned char $\ast$ $>$ \&v\-Frame, std\-::vector$<$ unsigned char $\ast$ $>$ \&v\-Lines, uint32\-\_\-t max\-\_\-size, unsigned char $\ast$cb, uint32\-\_\-t idx=0)  throw (std\-::string)\label{classDIFUnpacker_a5ab111b5d6acdeefd29648199800f27e}
+
+\item 
+static void {\bfseries dump\-Frame\-Old} (unsigned char $\ast$buf)\label{classDIFUnpacker_a24d530b0a8f9c525b9e1f569fd7e800f}
+
+\item 
+static unsigned long {\bfseries swap\-\_\-bytes} (unsigned int n, unsigned char $\ast$buf)\label{classDIFUnpacker_ab0b206c3dde528aca2b5d098b6314952}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 34 of file D\-I\-F\-Unpacker.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+D\-I\-F\-Unpacker.\-h\item 
+D\-I\-F\-Unpacker.\-cc\end{DoxyCompactItemize}

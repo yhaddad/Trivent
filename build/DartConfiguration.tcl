@@ -52,9 +52,9 @@ GITUpdateOptions:
 GITUpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: /home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/bin/git
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: /home/hadddad/work/ilcsoft/v01-17-02/gsl/usr/bin/c++

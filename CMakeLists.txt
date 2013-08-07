@@ -1,6 +1,6 @@
 ########################################################
 # cmake file for building Marlin example Package
-# @author Jan Engels, Desy IT
+# @author Haddad Yacine 
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6 FATAL_ERROR)
 ########################################################
 
@@ -12,7 +12,7 @@ PROJECT(Trivent)
 # project version
 SET( ${PROJECT_NAME}_VERSION_MAJOR 0 )
 SET( ${PROJECT_NAME}_VERSION_MINOR 4 )
-SET( ${PROJECT_NAME}_VERSION_PATCH 1 )
+SET( ${PROJECT_NAME}_VERSION_PATCH 2 )
 
 
 
@@ -34,20 +34,6 @@ INCLUDE_DIRECTORIES( ${ROOT_INCLUDE_DIRS} )
 LINK_LIBRARIES( ${ROOT_LIBRARIES} )
 ADD_DEFINITIONS( ${ROOT_DEFINITIONS} )
 
-
-# optional package
-#FIND_PACKAGE( AIDA )
-#IF( AIDA_FOUND )
-#    INCLUDE_DIRECTORIES( ${AIDA_INCLUDE_DIRS} )
-#    LINK_LIBRARIES( ${AIDA_LIBRARIES} )
-#    ADD_DEFINITIONS( "-DMARLIN_USE_AIDA" )
-#    MESSAGE( STATUS "AIDA -- found" )
-#ELSE()
-#    MESSAGE( STATUS "AIDA -- not found" )
-#ENDIF()
-
-
-
 ### DOCUMENTATION ###########################################################
 
 OPTION( INSTALL_DOC "Set to OFF to skip build/install Documentation" ON )
@@ -57,10 +43,19 @@ IF( INSTALL_DOC AND EXISTS "${PROJECT_SOURCE_DIR}/doc/CMakeLists.txt" )
 ENDIF()
 
 
+ADD_DEFINITIONS( "-Wall -ansi -pedantic" )
+ADD_DEFINITIONS( "-Wno-long-long" )
 
 
-ADD_SUBDIRECTORY( ./EventBuilder )
-ADD_SUBDIRECTORY( ./SDHCALReco )
+MACRO( ADD_FASTSIM_PKG _input_dir )
+  MESSAGE( STATUS "Including package: ${_input_dir}" )
+  INCLUDE_DIRECTORIES( BEFORE ${_input_dir}/include )
+  AUX_SOURCE_DIRECTORY( ${_input_dir}/src FastSim_srcs )
+ENDMACRO()
+
+
+ADD_FASTSIM_PKG(  ./SDHCALReco )
+ADD_FASTSIM_PKG(  ./EventBuilder )
 
 # display some variables and write them to cache
 DISPLAY_STD_VARIABLES()

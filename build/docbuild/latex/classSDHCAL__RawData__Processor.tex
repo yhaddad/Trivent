@@ -1,0 +1,71 @@
+\section{S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor Class Reference}
+\label{classSDHCAL__RawData__Processor}\index{S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor@{S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor}}
+Inheritance diagram for S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSDHCAL__RawData__Processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Processor $\ast$ {\bfseries new\-Processor} ()\label{classSDHCAL__RawData__Processor_a2858a41a6e319c7421ae5a7c4bb72ce8}
+
+\item 
+virtual void {\bf init} ()
+\begin{DoxyCompactList}\small\item\em Called at the begin of the job before anything is read. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Run\-Header} (L\-C\-Run\-Header $\ast$run)\label{classSDHCAL__RawData__Processor_a5055e1d2a481b4521389857b8e635e47}
+
+\begin{DoxyCompactList}\small\item\em Called for every run. \end{DoxyCompactList}\item 
+virtual void {\bf process\-Event} (L\-C\-Event $\ast$evt)\label{classSDHCAL__RawData__Processor_a206997e22828eff5fcb029448533e3b4}
+
+\begin{DoxyCompactList}\small\item\em Called for every event -\/ the working horse. \end{DoxyCompactList}\item 
+virtual void {\bfseries check} (L\-C\-Event $\ast$evt)\label{classSDHCAL__RawData__Processor_ab884e4f49c7cf3b10e9a68cf977cd7b3}
+
+\item 
+virtual void {\bf end} ()\label{classSDHCAL__RawData__Processor_a5ce1f6c5628449ad3ea9e4aeb0f8457b}
+
+\begin{DoxyCompactList}\small\item\em Called after data processing for clean up. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 82 of file S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor.\-h.
+
+
+
+\subsection{Member Function Documentation}
+\index{S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor@{S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor}!init@{init}}
+\index{init@{init}!SDHCAL_RawData_Processor@{S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classSDHCAL__RawData__Processor_a9e3e8e999a811d44c391d6eb5d195b86}
+
+
+Called at the begin of the job before anything is read. 
+
+Use to initialize the processor, e.\-g. book histograms. 
+
+Definition at line 152 of file S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor.\-cc.
+
+
+\begin{DoxyCode}
+152                                     \{ 
+153 
+154   \textcolor{comment}{//streamlog\_out(DEBUG) << "   init called  " << std::endl ;}
+155 
+156   \textcolor{comment}{// usually a good idea to}
+157   printParameters() ;
+158 
+159 
+160 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor.\-h\item 
+S\-D\-H\-C\-A\-L\-\_\-\-Raw\-Data\-\_\-\-Processor.\-cc\end{DoxyCompactItemize}

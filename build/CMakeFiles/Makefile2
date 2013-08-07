@@ -974,7 +974,7 @@ doc/preinstall:
 doc/CMakeFiles/doc.dir/all:
 	$(MAKE) -f doc/CMakeFiles/doc.dir/build.make doc/CMakeFiles/doc.dir/depend
 	$(MAKE) -f doc/CMakeFiles/doc.dir/build.make doc/CMakeFiles/doc.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hadddad/work/Trivent/trunk/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hadddad/work/Trivent/trunk/build/CMakeFiles  1
 	@echo "Built target doc"
 .PHONY : doc/CMakeFiles/doc.dir/all
 
@@ -1027,106 +1027,6 @@ doc/CMakeFiles/uninstall_doc.dir/clean:
 
 # clean rule for target.
 clean: doc/CMakeFiles/uninstall_doc.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory EventBuilder
-
-# Convenience name for "all" pass in the directory.
-EventBuilder/all: EventBuilder/CMakeFiles/Trivent.dir/all
-.PHONY : EventBuilder/all
-
-# Convenience name for "clean" pass in the directory.
-EventBuilder/clean: EventBuilder/CMakeFiles/Trivent.dir/clean
-.PHONY : EventBuilder/clean
-
-# Convenience name for "preinstall" pass in the directory.
-EventBuilder/preinstall:
-.PHONY : EventBuilder/preinstall
-
-#=============================================================================
-# Target rules for target EventBuilder/CMakeFiles/Trivent.dir
-
-# All Build rule for target.
-EventBuilder/CMakeFiles/Trivent.dir/all:
-	$(MAKE) -f EventBuilder/CMakeFiles/Trivent.dir/build.make EventBuilder/CMakeFiles/Trivent.dir/depend
-	$(MAKE) -f EventBuilder/CMakeFiles/Trivent.dir/build.make EventBuilder/CMakeFiles/Trivent.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hadddad/work/Trivent/trunk/build/CMakeFiles  1 2 3 4 5 6
-	@echo "Built target Trivent"
-.PHONY : EventBuilder/CMakeFiles/Trivent.dir/all
-
-# Include target in all.
-all: EventBuilder/CMakeFiles/Trivent.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-EventBuilder/CMakeFiles/Trivent.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hadddad/work/Trivent/trunk/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 EventBuilder/CMakeFiles/Trivent.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hadddad/work/Trivent/trunk/build/CMakeFiles 0
-.PHONY : EventBuilder/CMakeFiles/Trivent.dir/rule
-
-# Convenience name for target.
-Trivent: EventBuilder/CMakeFiles/Trivent.dir/rule
-.PHONY : Trivent
-
-# clean rule for target.
-EventBuilder/CMakeFiles/Trivent.dir/clean:
-	$(MAKE) -f EventBuilder/CMakeFiles/Trivent.dir/build.make EventBuilder/CMakeFiles/Trivent.dir/clean
-.PHONY : EventBuilder/CMakeFiles/Trivent.dir/clean
-
-# clean rule for target.
-clean: EventBuilder/CMakeFiles/Trivent.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory SDHCALReco
-
-# Convenience name for "all" pass in the directory.
-SDHCALReco/all: SDHCALReco/CMakeFiles/TriventReco.dir/all
-.PHONY : SDHCALReco/all
-
-# Convenience name for "clean" pass in the directory.
-SDHCALReco/clean: SDHCALReco/CMakeFiles/TriventReco.dir/clean
-.PHONY : SDHCALReco/clean
-
-# Convenience name for "preinstall" pass in the directory.
-SDHCALReco/preinstall:
-.PHONY : SDHCALReco/preinstall
-
-#=============================================================================
-# Target rules for target SDHCALReco/CMakeFiles/TriventReco.dir
-
-# All Build rule for target.
-SDHCALReco/CMakeFiles/TriventReco.dir/all:
-	$(MAKE) -f SDHCALReco/CMakeFiles/TriventReco.dir/build.make SDHCALReco/CMakeFiles/TriventReco.dir/depend
-	$(MAKE) -f SDHCALReco/CMakeFiles/TriventReco.dir/build.make SDHCALReco/CMakeFiles/TriventReco.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hadddad/work/Trivent/trunk/build/CMakeFiles  7 8 9
-	@echo "Built target TriventReco"
-.PHONY : SDHCALReco/CMakeFiles/TriventReco.dir/all
-
-# Include target in all.
-all: SDHCALReco/CMakeFiles/TriventReco.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-SDHCALReco/CMakeFiles/TriventReco.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hadddad/work/Trivent/trunk/build/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 SDHCALReco/CMakeFiles/TriventReco.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hadddad/work/Trivent/trunk/build/CMakeFiles 0
-.PHONY : SDHCALReco/CMakeFiles/TriventReco.dir/rule
-
-# Convenience name for target.
-TriventReco: SDHCALReco/CMakeFiles/TriventReco.dir/rule
-.PHONY : TriventReco
-
-# clean rule for target.
-SDHCALReco/CMakeFiles/TriventReco.dir/clean:
-	$(MAKE) -f SDHCALReco/CMakeFiles/TriventReco.dir/build.make SDHCALReco/CMakeFiles/TriventReco.dir/clean
-.PHONY : SDHCALReco/CMakeFiles/TriventReco.dir/clean
-
-# clean rule for target.
-clean: SDHCALReco/CMakeFiles/TriventReco.dir/clean
 .PHONY : clean
 
 #=============================================================================
